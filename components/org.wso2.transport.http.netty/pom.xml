@@ -193,7 +193,6 @@
     </build>
 
     <properties>
-        <bundle.activator>org.wso2.transport.http.netty.internal.HttpTransportActivator</bundle.activator>
         <private.package>
             org.wso2.transport.http.netty.internal
         </private.package>
@@ -202,8 +201,6 @@
             org.wso2.transport.http.netty.*;version="${netty.transport.package.export.version}",
         </export.package>
         <import.package>
-            org.osgi.framework.*;version="${osgi.framework.import.version.range}",
-            org.osgi.util.tracker;version="${osgi.service.tracker.import.version.range}",
             io.netty.buffer.*;version="${netty.package.import.version.range}",
             io.netty.handler.codec.*;version="${netty.package.import.version.range}",
             io.netty.util.*;version="${netty.package.import.version.range}",

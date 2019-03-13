@@ -57,6 +57,10 @@
         </dependency>
         <dependency>
             <groupId>io.netty</groupId>
+            <artifactId>netty-codec-socks</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.netty</groupId>
             <artifactId>netty-codec-http</artifactId>
         </dependency>
         <dependency>
@@ -70,6 +74,10 @@
         <dependency>
             <groupId>commons-pool.wso2</groupId>
             <artifactId>commons-pool</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-handler-proxy</artifactId>
         </dependency>
     </dependencies>
     <build>
@@ -144,6 +152,14 @@
                                 </bundle>
                                 <bundle>
                                     <symbolicName>io.netty.handler</symbolicName>
+                                    <version>${netty.version}</version>
+                                </bundle>
+                                <bundle>
+                                    <symbolicName>io.netty.handler-proxy</symbolicName>
+                                    <version>${netty.version}</version>
+                                </bundle>
+                                <bundle>
+                                    <symbolicName>io.netty.codec-socks</symbolicName>
                                     <version>${netty.version}</version>
                                 </bundle>
                                 <bundle>
